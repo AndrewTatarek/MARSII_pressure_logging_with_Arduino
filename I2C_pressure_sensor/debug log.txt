@@ -1,0 +1,36 @@
+let ps = arduino pressure sensor
+
+ps 0,2,3 all plugged in
+ps 0 is running blink
+ps 0,3 are wrapped up
+only ps 2 works
+restarted ps 3
+only ps 2 works
+unplugged ps 2
+marsDebugger pauses when run
+marsDebugger altered to fail without hardware
+unplugged ps3
+debugging serialwin32
+	fixed issue that program fails when stepped through by a debugger
+	found that win32.GetOverlappedResult was pausing forever, fixed issue by redownloading blink to ps 0, cause still unknown
+put I2C code on ps 0 
+currently ps 0 is the only board plugged in
+ps 0 works correctly
+ps 2 plugged in
+ps 0,2 both work correctly
+unplugged ps 0,2
+plugged  ps 3
+ps 3 restarts as expected but is not visible as a COM port
+ps 3 unplugged
+ps 3 unwrapped
+ps 3 plugged in
+ps 3 still not visible as com port
+ps 3 plugged in a new usb point that has not been used yet
+ps 3 still not visible as com port
+I remove the pressure sensor from arduino board number 3
+arduino 3 still does not show up as com port
+I found a windows message that says that there was a usb malfunction, this may have been around a while
+restart windows
+arduino 3 still does not show up as com port
+I conclude that the usb capability on the ps 3 board is broken and not easily fixed
+I replaced the arduino board

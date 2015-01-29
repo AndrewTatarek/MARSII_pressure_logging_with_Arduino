@@ -1,0 +1,5 @@
+let au = arduino uno
+
+au 0,2,3 have had the reset wires cut
+au 3 plugged in
+blink works on au 3
