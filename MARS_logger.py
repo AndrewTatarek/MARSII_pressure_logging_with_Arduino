@@ -24,7 +24,7 @@ for sensor in pSensors:
 # nice to know info
 for pSensor in pSensors:
     print(pSensor.serialNumber,pSensor.comHandle.port+1,pSensor.pressure())
-    
+
 timeToRunFor = float(input('How many seconds should data be recorded for?\n'))
 fileName = 'MARS data\\'+input('What should the results file be called?\n')
 
